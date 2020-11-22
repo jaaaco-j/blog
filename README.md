@@ -1,6 +1,6 @@
 # blog
 zadanie domowe
 
-'''bash
+```bash
 docker-compose up
-'''
+```
