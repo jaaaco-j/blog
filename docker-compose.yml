@@ -10,6 +10,8 @@ services:
       WORDPRESS_DB_USER: jaaaco
       WORDPRESS_DB_PASSWORD: a12345
       WORDPRESS_DB_NAME: wp
+    volumes:
+      - wordpress:/var/www/html
   db:
     image: mysql
     restart: always
@@ -18,6 +20,8 @@ services:
       MYSQL_PASSWORD: a12345
       MYSQL_ROOT_PASSWORD: a123456
       MYSQL_DATABASE: wp
+    volumes:
+      - db:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin
@@ -27,5 +31,7 @@ services:
     environment:
       PMA_ARBITRARY: 1
       PMA_HOST: db
-      
+volumes:
+  wordpress:
+  db:     
     
