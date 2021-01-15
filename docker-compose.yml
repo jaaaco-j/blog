@@ -7,8 +7,8 @@ services:
       - 8080:80
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: jaaaco
-      WORDPRESS_DB_PASSWORD: a12345
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: '1111'
       WORDPRESS_DB_NAME: wp
     volumes:
       - wordpress:/var/www/html
@@ -16,9 +16,9 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_USER: jaaaco 
-      MYSQL_PASSWORD: a12345
-      MYSQL_ROOT_PASSWORD: a123456
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: '1111'
+      MYSQL_ROOT_PASSWORD: '1111'
       MYSQL_DATABASE: wp
     volumes:
       - db:/var/lib/mysql
@@ -33,5 +33,5 @@ services:
       PMA_HOST: db
 volumes:
   wordpress:
-  db:     
+  db:
     
