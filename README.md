@@ -7,5 +7,5 @@ wpisać tą komendę do terminala:
 docker-compose up
 ```
 
-Użytkownik: root
+Użytkownik: root\
 Hasło: 1111
