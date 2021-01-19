@@ -1,8 +1,9 @@
-# blog
-zadanie domowe
+# Blog Miłosza Wietrzyka
+## Zadanie z informatyki, klasa 8
 
-jak otworzyć stronę
+# Jak otworzyć stronę
 
+* zainstalować git i sklonować repozytorium ( git clone https://github.com/jaaaco-j/blog.git )
 * zainstalować docker desktop: https://www.docker.com/products/docker-desktop
 * otworzyć folder w edytorze kodu z dostępem do terminala np. visual studio code
 * wpisać tą komendę do terminala:
